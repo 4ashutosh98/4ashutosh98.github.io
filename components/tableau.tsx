@@ -14,7 +14,9 @@ export default function TableauVisualizations() {
             vizElement.style.height = "800px" // Fixed height for better visibility
             const scriptElement = document.createElement("script")
             scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js"
-            vizElement.parentNode.insertBefore(scriptElement, vizElement)
+            if (vizElement.parentNode) {
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            }
           }
         }
       })
