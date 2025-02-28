@@ -1,33 +1,37 @@
-name: Deploy to GitHub Pages
+name: Deploy Next.js to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Change this to your default branch if different
+      - main  # Runs when code is pushed to main
+
+permissions:
+  contents: write  # Required to push to gh-pages branch
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Install Node.js 22
+        uses: actions/setup-node@v4
         with:
-          node-version: '16'  # Specify the Node.js version
+          node-version: 22  # Match your Node.js version
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build and export
-        run: |
-          npm run build
-          npm run export
+      - name: Build Next.js site
+        run: npm run build
+
+      - name: Export static site
+        run: npm run export  # Generates "out/" folder
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out  # Change this to your output directory
+          branch: gh-pages  # Deploy to this branch
+          folder: out  # Deploy "out/" directory
+          clean: true  # Removes old files
