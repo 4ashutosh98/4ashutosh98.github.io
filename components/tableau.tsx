@@ -15,7 +15,7 @@ export default function TableauVisualizations() {
             const scriptElement = document.createElement("script")
             scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js"
             if (vizElement.parentNode) {
-              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+              vizElement.parentNode.insertBefore(scriptElement, vizElement)
             }
           }
         }
@@ -54,6 +54,10 @@ export default function TableauVisualizations() {
     <section id="tableau" className="py-20 bg-gradient-to-br from-indigo-50 to-purple-100">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-12 text-indigo-800">Tableau Visualizations</h2>
+        {/* Disclaimer shown only on mobile */}
+        <p className="block md:hidden text-center text-sm text-gray-600 mb-4">
+          For optimal viewing, please access these visualizations on a desktop computer.
+        </p>
         <div className="space-y-12">
           {visualizations.map((viz, index) => (
             <div
@@ -115,4 +119,3 @@ export default function TableauVisualizations() {
     </section>
   )
 }
-
