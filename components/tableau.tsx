@@ -46,7 +46,7 @@ export default function TableauVisualizations() {
     {
       id: "viz1678764026243",
       name: "Dashboards_DataStories_Ashutosh_Choudhari/Dashboard1",
-      title: "Dashboard 1",
+      title: "Ashutosh's Dashboard Assignment",
     },
   ]
 
