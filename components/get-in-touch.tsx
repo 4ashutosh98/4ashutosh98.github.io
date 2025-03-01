@@ -1,23 +1,32 @@
 "use client"
 
 import type React from "react"
-
 import { Mail, Phone, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useState } from "react"
+import emailjs from 'emailjs-com';
 
 export default function GetInTouch() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
-  })
+  });
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    // Add form submission logic here
+    e.preventDefault();
+
+    try {
+      await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID');
+      setSuccessMessage("Your details were sent to Ashutosh. He will be in touch with you shortly.");
+      setFormData({ name: "", email: "", message: "" }); // Clear the form fields
+    } catch (error) {
+      console.error('Failed to send message:', error);
+      alert('Failed to send message. Please try again later.');
+    }
   }
 
   return (
@@ -87,9 +96,13 @@ export default function GetInTouch() {
               Send Message
             </Button>
           </form>
+          {successMessage && (
+            <div className="mt-4 text-green-600 text-center">
+              {successMessage}
+            </div>
+          )}
         </div>
       </div>
     </section>
   )
 }
-
