@@ -1,10 +1,11 @@
 "use client"
 
-import React, { useState } from "react"
+import type React from "react"
 import { Mail, Phone, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { useState } from "react"
 import emailjs from "emailjs-com"
 
 export default function GetInTouch() {
@@ -17,16 +18,18 @@ export default function GetInTouch() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Submitting form with data:", formData)
+
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+    const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+
+    if (!serviceId || !templateId || !userId) {
+      alert("EmailJS configuration is missing. Please check your setup.")
+      return
+    }
 
     try {
-      const result = await emailjs.send(
-        "service_p4wh16q",
-        "template_55jqam9",
-        formData,
-        "oqPWvTTZexkZtcZvn"
-      )
-      console.log("Email sent successfully:", result)
+      await emailjs.send(serviceId, templateId, formData, userId)
       setSuccessMessage(
         "Your details were sent to Ashutosh. He will be in touch with you shortly."
       )
@@ -40,14 +43,11 @@ export default function GetInTouch() {
   return (
     <section id="contact" className="py-20 px-6">
       <div className="max-w-2xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 text-indigo-800">
-          Contact me
-        </h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-indigo-800">Contact me</h2>
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
             <p className="text-lg text-gray-600">
-              I'm always open to new opportunities and collaborations. Feel free
-              to reach out!
+              I'm always open to new opportunities and collaborations. Feel free to reach out!
             </p>
             <div className="space-y-4">
               <a
@@ -76,9 +76,7 @@ export default function GetInTouch() {
                 type="text"
                 placeholder="Name"
                 value={formData.name}
-                onChange={(e) =>
-                  setFormData({ ...formData, name: e.target.value })
-                }
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 className="w-full p-2 transition-shadow duration-300 focus:ring-2 focus:ring-indigo-500"
                 required
               />
@@ -88,9 +86,7 @@ export default function GetInTouch() {
                 type="email"
                 placeholder="Email"
                 value={formData.email}
-                onChange={(e) =>
-                  setFormData({ ...formData, email: e.target.value })
-                }
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 className="w-full p-2 transition-shadow duration-300 focus:ring-2 focus:ring-indigo-500"
                 required
               />
@@ -99,9 +95,7 @@ export default function GetInTouch() {
               <Textarea
                 placeholder="Message"
                 value={formData.message}
-                onChange={(e) =>
-                  setFormData({ ...formData, message: e.target.value })
-                }
+                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 className="w-full p-2 h-32 transition-shadow duration-300 focus:ring-2 focus:ring-indigo-500"
                 required
               />
@@ -121,4 +115,3 @@ export default function GetInTouch() {
     </section>
   )
 }
-
