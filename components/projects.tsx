@@ -80,20 +80,20 @@ export default function Projects() {
       image: "/unisys-project.png?height=200&width=300",
     },
     {
-      title: "Question-Answering System Development",
+      title: "Question Answering System Development",
       description:
         "Fine-tuned a pre-trained BERT model for question-answering tasks, achieving 68% accuracy on the SQuAD test set.",
-      technologies: ["Azure ML Studio", "PyTorch", "nltk", "spaCy", "SentenceTransformers"],
+      technologies: ["Azure Machine Learning", "PyTorch", "nltk", "spaCy", "SentenceTransformers"],
       duration: "Sept 2023 – Nov 2023",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/question_answering_system.png?height=200&width=300",
     },
     {
-      title: "CGM Systems Analysis and Improvement",
+      title: "CGM Systems Analysis",
       description:
         "Utilized NLP techniques for detailed analysis of CGM systems, enhancing understanding of consumer needs in diabetes management technology.",
       technologies: ["NLTK", "Scikit Learn", "genism", "matplotlib"],
       duration: "Aug 2023 – Dec 2023",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/cgm-systems.png?height=200&width=300",
     },
     {
       title: "Data Prism",
