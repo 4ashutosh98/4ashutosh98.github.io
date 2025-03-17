@@ -4,14 +4,34 @@ import { Github, ExternalLink } from "lucide-react"
 export default function Projects() {
   const projects = [
     {
+      title: "SQL Query Chat LLM App",
+      description:
+        "Developed a natural language to SQL interface using Llama3 and LangChain that translates plain English to SQL queries for database interaction. Supports both SQLite and MySQL databases with an interactive Streamlit chat interface.",
+      technologies: ["LangChain", "Groq", "Llama3", "Streamlit", "SQLite", "MySQL", "SQLAlchemy"],
+      duration: "Mar 2025 – Apr 2025",
+      image: "sql_query_chat_llm.png?height=200&width=300",
+      github: "https://github.com/4ashutosh98/sql-query-chat-llm-app",
+      demo: "https://sql-query-chat-llm-app-ash.streamlit.app/",
+    },
+    {
+      title: "Math and Search LLM Application",
+      description:
+        "Developed a Streamlit-powered AI application using Google Gemma 2 that solves mathematical problems with step-by-step reasoning and retrieves information from Wikipedia through an interactive chat interface.",
+      technologies: ["LangChain", "Groq", "Streamlit", "Google Gemma 2", "Wikipedia API", "Python"],
+      duration: "Feb 2025 – Mar 2025",
+      image: "/math_and_search_llm.png?height=200&width=300",
+      github: "https://github.com/4ashutosh98/math-and-search-llm-app",
+      demo: "https://math-and-search-llm-app-ash.streamlit.app/",
+    },
+    {
       title: "Search Engine LLM",
       description:
         "Developed an AI agent-powered search chatbot using Llama3 LLM with LangChain, Groq, and HuggingFace, integrating multiple search tools and handling multi-hop queries.",
       technologies: ["LangChain", "Groq", "HuggingFace", "Streamlit", "Ollama", "GitHub Actions"],
       duration: "Jan 2025 – Feb 2025",
-      image: "/placeholder.svg?height=200&width=300",
-      github: "https://github.com/yourusername/search-engine-llm",
-      demo: "https://search-engine-llm-demo.com",
+      image: "/search-llm-app.png?height=200&width=300",
+      github: "https://github.com/4ashutosh98/Search-Engine-LLM-app",
+      demo: "https://huggingface.co/spaces/ashutoshchoudhari/Search-Engine-LLM-app",
     },
     {
       title: "Blog Generation using AI",
@@ -19,9 +39,19 @@ export default function Projects() {
         "Built a serverless AI-powered blog generator using AWS Lambda, Bedrock AI, and Streamlit, reducing manual content creation time by 80%.",
       technologies: ["AWS Bedrock", "Lambda", "S3", "Cloudwatch", "API Gateway", "Streamlit", "GitHub Actions"],
       duration: "Dec 2024 – Jan 2025",
-      image: "/placeholder.svg?height=200&width=300",
-      github: "https://github.com/yourusername/blog-generation",
-      demo: "https://blog-generation-demo.com",
+      image: "/blog-generation-using-ai.png?height=200&width=300",
+      github: "https://github.com/4ashutosh98/Blog-Generation-using-AWS-Lambda-and-AWS-Bedrock",
+      demo: "https://blog-generation-using-aws-lambda-and-aws-bedrock-ac.streamlit.app/",
+    },
+    {
+      title: "Nexteer AI Docs Project",
+      description:
+        "This project is designed to process and compare PDF documents by extracting text from PDFs using Adobe PDF Extract API, storing and retrieving data from MongoDB for limiting API costs and faster processing, and comparing document sections using GPT-4o.",
+      technologies: ["Adobe PDF Extract API", "MongoDB", "OpenAI GPT-4o", "Streamlit", "Python"],
+      duration: "Aug 2024 – Dec 2024",
+      image: "/nexteer_ai_docs.png?height=200&width=300",
+      github: "https://github.com/4ashutosh98/Nexteer-AI-Docs",
+      demo: "https://nexteer-ai-docs-abumbwfz2xlbmcgvtrfvkr.streamlit.app/",
     },
     {
       title: "Food Classification Using Transfer Learning",
@@ -29,8 +59,8 @@ export default function Projects() {
         "Applied transfer learning on EfficientNet to classify 101 food categories, achieving 84% accuracy and reducing training time by 77%.",
       technologies: ["Pytorch", "Tensorboard", "Efficientnet"],
       duration: "May 2024 – Jul 2024",
-      image: "/placeholder.svg?height=200&width=300",
-      github: "https://github.com/yourusername/food-classification",
+      image: "/food-classification.png?height=200&width=300",
+      github: "https://github.com/4ashutosh98/pytorch-deep-learning-files/blob/main/Notebook_7.ipynb",
     },
     {
       title: "Artificial Intelligence Policy Chatbot",
@@ -38,8 +68,8 @@ export default function Projects() {
         "Fine-tuned Llama-2 7b model for AI policy-related inquiries, achieving significant improvements in BLEU, ROUGE, and METEOR scores.",
       technologies: ["Hugging Face", "PyTorch", "Large Language Models", "Generative AI"],
       duration: "Jan 2024 – Mar 2024",
-      image: "/placeholder.svg?height=200&width=300",
-      github: "https://github.com/yourusername/ai-policy-chatbot",
+      image: "/llama-finetuning.png?height=200&width=300",
+      github: "https://github.com/4ashutosh98/Llama-finetuning-project",
     },
     {
       title: "Unisys Automated Invoice Processing",
@@ -47,8 +77,7 @@ export default function Projects() {
         "Developed an advanced automated PDF invoice processing system using OpenAI GPT-4.0 and Azure Document Intelligence, improving data extraction accuracy to over 87%.",
       technologies: ["Azure AI Document Intelligence", "Open AI API", "Flask"],
       duration: "Jan 2024 – Mar 2024",
-      image: "/placeholder.svg?height=200&width=300",
-      github: "https://github.com/yourusername/invoice-processing",
+      image: "/unisys-project.png?height=200&width=300",
     },
     {
       title: "Question-Answering System Development",
@@ -57,7 +86,6 @@ export default function Projects() {
       technologies: ["Azure ML Studio", "PyTorch", "nltk", "spaCy", "SentenceTransformers"],
       duration: "Sept 2023 – Nov 2023",
       image: "/placeholder.svg?height=200&width=300",
-      github: "https://github.com/yourusername/question-answering",
     },
     {
       title: "CGM Systems Analysis and Improvement",
@@ -66,7 +94,6 @@ export default function Projects() {
       technologies: ["NLTK", "Scikit Learn", "genism", "matplotlib"],
       duration: "Aug 2023 – Dec 2023",
       image: "/placeholder.svg?height=200&width=300",
-      github: "https://github.com/yourusername/cgm-analysis",
     },
     {
       title: "Data Prism",
@@ -74,8 +101,7 @@ export default function Projects() {
         "Designed and created a GUI application that increased resource accessibility by 36% for beginner students in data science.",
       technologies: ["PySimpleGUI", "Tkinter", "Selenium", "Beautiful Soup", "Pandas"],
       duration: "Aug 2022 – Dec 2022",
-      image: "/placeholder.svg?height=200&width=300",
-      github: "https://github.com/yourusername/data-prism",
+      image: "/data_prism.png?height=200&width=300",
     },
   ]
 
@@ -93,7 +119,7 @@ export default function Projects() {
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
                 width={300}
-                height={150}
+                height={200}
                 className="w-full h-40 object-cover"
               />
               <div className="p-6">
