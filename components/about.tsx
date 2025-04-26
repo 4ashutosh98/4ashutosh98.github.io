@@ -5,7 +5,7 @@ export default function About() {
         <h2 className="text-4xl font-bold text-center mb-8 text-indigo-800">About Me</h2>
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-xl text-gray-700 mb-6">
-            As a Master's student in Information Systems Management at Carnegie Mellon University, I'm passionate about
+            As a masters graduate in Information Systems Management at Carnegie Mellon University, I'm passionate about
             leveraging cutting-edge technologies in Data Science, Machine Learning, and Artificial Intelligence to solve
             complex real-world problems.
           </p>
