@@ -4,16 +4,6 @@ import { Github, ExternalLink } from "lucide-react"
 export default function Projects() {
   const projects = [
     {
-      title: "Math and Search LLM Application",
-      description:
-        "Developed a Streamlit-powered AI application using Google Gemma 2 that solves mathematical problems with step-by-step reasoning and retrieves information from Wikipedia through an interactive chat interface.",
-      technologies: ["LangChain", "Groq", "Streamlit", "Google Gemma 2", "Wikipedia API", "Python"],
-      duration: "Feb 2025 – Mar 2025",
-      image: "/math_and_search_llm.png?height=200&width=300",
-      github: "https://github.com/4ashutosh98/math-and-search-llm-app",
-      demo: "https://math-and-search-llm-app-ash.streamlit.app/",
-    },
-    {
       title: "Search Engine LLM",
       description:
         "Developed an AI agent-powered search chatbot using Llama3 LLM with LangChain, Groq, and HuggingFace, integrating multiple search tools and handling multi-hop queries.",
@@ -32,6 +22,16 @@ export default function Projects() {
       image: "/blog-generation-using-ai.png?height=200&width=300",
       github: "https://github.com/4ashutosh98/Blog-Generation-using-AWS-Lambda-and-AWS-Bedrock",
       demo: "https://blog-generation-using-aws-lambda-and-aws-bedrock-ac.streamlit.app/",
+    },
+    {
+      title: "Math and Search LLM Application",
+      description:
+        "Developed a Streamlit-powered AI application using Google Gemma 2 that solves mathematical problems with step-by-step reasoning and retrieves information from Wikipedia through an interactive chat interface.",
+      technologies: ["LangChain", "Groq", "Streamlit", "Google Gemma 2", "Wikipedia API", "Python"],
+      duration: "Feb 2025 – Mar 2025",
+      image: "/math_and_search_llm.png?height=200&width=300",
+      github: "https://github.com/4ashutosh98/math-and-search-llm-app",
+      demo: "https://math-and-search-llm-app-ash.streamlit.app/",
     },
     {
       title: "SQL Query Chat LLM App",
