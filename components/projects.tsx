@@ -4,16 +4,6 @@ import { Github, ExternalLink } from "lucide-react"
 export default function Projects() {
   const projects = [
     {
-      title: "SQL Query Chat LLM App",
-      description:
-        "Developed a natural language to SQL interface using Llama3 and LangChain that translates plain English to SQL queries for database interaction. Supports both SQLite and MySQL databases with an interactive Streamlit chat interface.",
-      technologies: ["LangChain", "Groq", "Llama3", "Streamlit", "SQLite", "MySQL", "SQLAlchemy"],
-      duration: "Mar 2025 – Apr 2025",
-      image: "sql_query_chat_llm.png?height=200&width=300",
-      github: "https://github.com/4ashutosh98/sql-query-chat-llm-app",
-      demo: "https://sql-query-chat-llm-app-ash.streamlit.app/",
-    },
-    {
       title: "Math and Search LLM Application",
       description:
         "Developed a Streamlit-powered AI application using Google Gemma 2 that solves mathematical problems with step-by-step reasoning and retrieves information from Wikipedia through an interactive chat interface.",
@@ -42,6 +32,16 @@ export default function Projects() {
       image: "/blog-generation-using-ai.png?height=200&width=300",
       github: "https://github.com/4ashutosh98/Blog-Generation-using-AWS-Lambda-and-AWS-Bedrock",
       demo: "https://blog-generation-using-aws-lambda-and-aws-bedrock-ac.streamlit.app/",
+    },
+    {
+      title: "SQL Query Chat LLM App",
+      description:
+        "Developed a natural language to SQL interface using Llama3 and LangChain that translates plain English to SQL queries for database interaction. Supports both SQLite and MySQL databases with an interactive Streamlit chat interface.",
+      technologies: ["LangChain", "Groq", "Llama3", "Streamlit", "SQLite", "MySQL", "SQLAlchemy"],
+      duration: "Mar 2025 – Apr 2025",
+      image: "sql_query_chat_llm.png?height=200&width=300",
+      github: "https://github.com/4ashutosh98/sql-query-chat-llm-app",
+      demo: "https://sql-query-chat-llm-app-ash.streamlit.app/",
     },
     {
       title: "Nexteer AI Docs Project",
