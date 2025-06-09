@@ -91,7 +91,7 @@ export default function Projects() {
       title: "CGM Systems Analysis",
       description:
         "Utilized NLP techniques for detailed analysis of CGM systems, enhancing understanding of consumer needs in diabetes management technology.",
-      technologies: ["NLTK", "Scikit Learn", "genism", "matplotlib"],
+      technologies: ["NLTK", "Scikit Learn", "gensim", "matplotlib"],
       duration: "Aug 2023 – Dec 2023",
       image: "/cgm-systems.png?height=200&width=300",
     },
