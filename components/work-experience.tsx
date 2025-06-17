@@ -1,9 +1,19 @@
 export default function WorkExperience() {
   const experiences = [
     {
+      company: "Confirmed LLC",
+      location: "Pittsburgh, PA",
+      position: "Software Developer",
+      duration: "Aug 2024 – Dec 2024",
+      responsibilities: [
+        "Led development of a React-based Natural Language Processing driven agentic AI chatbot with LangChain.js and OpenAI function-calling, enforcing JSON schemas to guide multi-step workflows cutting task time by 25% and boosting adoption by 30%.",
+        "Integrated streaming agent pipelines over WebSockets in a JS frontend with Mixpanel analytics for input validation and flow control reducing support tickets 40% and lifting engagement 35%.",
+      ],
+    },
+    {
       company: "Nexteer Automotive",
       location: "Pittsburgh, PA",
-      position: "Machine Learning Engineer (Student Worker)",
+      position: "Machine Learning Engineer (Student Consultant)",
       duration: "Aug 2024 – Dec 2024",
       responsibilities: [
         "Created a document comparison application leveraging Python to extract, compare, and analyze PDF documents using Adobe PDF Extract API and OpenAI's GPT-4o, enhancing document management efficiency thus saving 200 human hours per month.",
@@ -13,7 +23,7 @@ export default function WorkExperience() {
     {
       company: "Unisys",
       location: "Pittsburgh, PA",
-      position: "AI Engineer (Student Worker)",
+      position: "AI Engineer (Student Consultant)",
       duration: "Jan 2024 – Mar 2024",
       responsibilities: [
         "Improved PDF invoice data extraction accuracy from Oracle Fusion's 20% to 83% for 18 key fields across semi-structured formats by developing a Flask application powered by OpenAI GPT-4 and Azure Document Intelligence.",
