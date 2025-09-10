@@ -1,13 +1,25 @@
 export default function WorkExperience() {
   const experiences = [
     {
+      company: "Pyramyd",
+      location: "Remote",
+      position: "AI/ML Engineer",
+      duration: "Jun 2025 – Present",
+      responsibilities: [
+        "Designed a transformer-based ML model in PyTorch to predict ratings for software product reviews achieving 87% accuracy.",
+        "Developed AI-powered RFP Requirements Extractor using o4-mini LLM and Azure AI Search, implementing parallel processing architecture to extract, categorize requirements from proposal documents with 90%+ accuracy across documents.",
+        "Optimized performance for 5x concurrent processing with vector search for intelligent document cross-referencing.",
+      ],
+    },
+    {
       company: "Confirmed LLC",
       location: "Pittsburgh, PA",
       position: "Software Developer",
       duration: "Jan 2025 – Present",
       responsibilities: [
-        "Led development of a React-based Natural Language Processing driven agentic AI chatbot with LangChain.js and OpenAI function-calling, enforcing JSON schemas to guide multi-step workflows cutting task time by 25% and boosting adoption by 30%.",
-        "Integrated streaming agent pipelines over WebSockets in a JS frontend with Mixpanel analytics for input validation and flow control reducing support tickets 40% and lifting engagement 35%.",
+        "Developed microservice using LangChain, FastAPI, Azure Container Apps for nametag scanning, achieving 92% accuracy.",
+        "Integrated Python service with .NET backend via REST APIs, optimized SQL query performance by 43% through NL-to-SQL.",
+        "Built CI/CD pipeline in Azure DevOps with pytest testing and Docker deployment; reduced deployment time by 70%.",
       ],
     },
     {
@@ -16,7 +28,7 @@ export default function WorkExperience() {
       position: "Machine Learning Engineer (Student Consultant)",
       duration: "Aug 2024 – Dec 2024",
       responsibilities: [
-        "Created a document comparison application leveraging Python to extract, compare, and analyze PDF documents using Adobe PDF Extract API and OpenAI's GPT-4o, enhancing document management efficiency thus saving 200 human hours per month.",
+        "Created document comparison application to extract, compare, and analyze PDF documents using Azure AI Document Intelligence, Adobe PDF Extract API and OpenAI's GPT-4o, enhancing document management efficiency and saving 2 FTEs.",
         "Implemented user-friendly Streamlit GUI with a robust backend data handling system leveraging MongoDB for persistent caching, to minimize API call costs and improve processing speed by 5 times.",
       ],
     },
@@ -32,8 +44,8 @@ export default function WorkExperience() {
     },
     {
       company: "MedSarthi LLC",
-      location: "Phoenix, AZ",
-      position: "Data Scientist",
+      location: "Remote",
+      position: "Data Scientist Intern",
       duration: "Jun 2023 - Aug 2023",
       responsibilities: [
         "Designed and implemented a data-driven recommendation system for medical graduates, leveraging A/B testing and regression analysis to optimize profiles and develop a weighted scoring algorithm, boosting residency acceptance rates by 14%.",
@@ -47,10 +59,9 @@ export default function WorkExperience() {
       position: "Solution Delivery Analyst",
       duration: "Jun 2021 - Jul 2022",
       responsibilities: [
-        "Engineered advanced log analysis workflows using data from SIEM tools (Splunk, QRadar), EDRs, and OSINT tools identifying and mitigating suspicious activities across system, network, and endpoint logs.",
-        "Generated over 100 detailed incident reports weekly, applying pattern recognition, anomaly detection, and OSINT tools to deliver actionable insights, driving a 32% reduction in security incidents through data-driven strategies.",
-        "Utilized data analytics to monitor cybersecurity environments for potential threats across six high-profile clients, delivering actionable insights that safeguarded key assets.",
-        "Collaborated with interdisciplinary teams to implement data-driven strategies, achieving a 32% reduction in security incidents for clients, highlighting my ability to leverage data in team settings and effectively communicate complex insights.",
+        "Developed a Python-based IOC triage tool to process 500+ IPs, domains, URLs, and emails daily, classifying inputs, and integrating OSINT APIs (VirusTotal, WHOIS, AbuseIPDB), reducing average query time by 65% with parallel execution.",
+        "Architected a Flask REST backend with PostgreSQL and Redis, exposing endpoints for IOC normalization, rate-limit handling, and API key management, enabling multi-user scalability and cutting redundant OSINT calls by 40%.",
+        "Built a React-based frontend with secure API integration to provide dashboards, results tables, and export workflows (Markdown/PDF/CSV), ensuring consistent and auditable threat intelligence reporting across environments.",
       ],
     },
   ]
