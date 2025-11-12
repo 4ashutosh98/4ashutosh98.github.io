@@ -15,7 +15,7 @@ export default function WorkExperience() {
       company: "Confirmed LLC",
       location: "Pittsburgh, PA",
       position: "Software Developer",
-      duration: "Jan 2025 – Present",
+      duration: "Feb 2025 – Sept 2025",
       responsibilities: [
         "Developed microservice using LangChain, FastAPI, Azure Container Apps for nametag scanning, achieving 92% accuracy.",
         "Integrated Python service with .NET backend via REST APIs, optimized SQL query performance by 43% through NL-to-SQL.",
