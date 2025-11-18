@@ -66,7 +66,7 @@ export default function GetInTouch() {
               </a>
               <div className="flex items-center space-x-3 text-gray-600">
                 <MapPin className="h-5 w-5" />
-                <span>Pittsburgh, PA</span>
+                <span>United States of America</span>
               </div>
             </div>
           </div>
