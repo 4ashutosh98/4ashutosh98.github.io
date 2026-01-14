@@ -4,7 +4,7 @@ export default function WorkExperience() {
       company: "Pyramyd",
       location: "Remote",
       position: "AI/ML Engineer",
-      duration: "Jun 2025 – Present",
+      duration: "Jun 2025 – Dec 2025",
       responsibilities: [
         "Designed a transformer-based ML model in PyTorch to predict ratings for software product reviews achieving 87% accuracy.",
         "Developed AI-powered RFP Requirements Extractor using o4-mini LLM and Azure AI Search, implementing parallel processing architecture to extract, categorize requirements from proposal documents with 90%+ accuracy across documents.",
