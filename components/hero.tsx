@@ -6,8 +6,8 @@ export default function Hero() {
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-4">
         <div className="md:w-1/2 text-center md:text-left pl-8 md:pl-16">
           <h1 className="text-4xl font-bold mb-4">Ashutosh Choudhari</h1>
-          <h2 className="text-2xl mb-6">Data Scientist & AI Engineer</h2>
-          <p className="mb-8">Carnegie Mellon graduate engineering AI solutions that bridge technology and business - turning data into decisions, problems into possibilities.</p>
+          <h2 className="text-2xl mb-6">Data Scientist & AI/ML Engineer</h2>
+          <p className="mb-8">Carnegie Mellon graduate, engineering AI/ML solutions that bridge technology and business - turning data into decisions, problems into possibilities.</p>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
             {[
               { label: "Get in Touch", href: "#contact" },
